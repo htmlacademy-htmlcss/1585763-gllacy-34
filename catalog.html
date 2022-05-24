@@ -15,7 +15,7 @@
     </a>
     <ul class="site-navigation-list">
       <li class="site-navigation-item">
-        <a class="navigation-link" href="#">Каталог</a>
+        <a class="navigation-link navigation-link-current" href="#">Каталог</a>
       </li>
       <li class="site-navigation-item">
         <a class="navigation-link" href="faq.html">Доставка и оплата</a>
@@ -45,7 +45,35 @@
   </nav>
 </header>
   <main class="main-catalog">
-    
+    <header class="catalog-header">
+      <h1 class="catalog-header-title">Сливочное мороженое</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Каталог</a>
+        </li>
+      </ul>
+    </header>
+    <section class="catalog-products">
+      <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="catalog-filters-group">
+          <legend class="catalog-filter-title">Сортировка:</legend>
+        </fieldset>
+        <fieldset class="catalog-filters-group">
+          <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
+        </fieldset>
+        <fieldset class="catalog-filters-group">
+          <legend class="catalog-filter-title">Жирность:</legend>
+        </fieldset>
+        <fieldset class="catalog-filters-group">
+          <legend class="catalog-filter-title">Наполнители:</legend>
+        </fieldset>
+        <button class="button" type="submit">Применить</button>
+      </form>
+    </section>
   </main>
   <footer class="main-footer">
   <ul class="social-links-list">

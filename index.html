@@ -24,20 +24,18 @@
           <a class="navigation-link" href="about.html">О компании</a>
         </li>
       </ul>
+      <a class="company-phone" href="tel:+78005558628">+7 800 555-86-28</a>
       <ul class="site-navigation-list navigation-user">
-        <li class="site-navigation-item">
-          <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
-        </li>
-        <li class="site-navigation-item">
-          <a class="navigation-link" href="#">
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
-        <li class="site-navigation-item">
-          <a class="navigation-link" href="#">Вход</a>
+        <li class="navigation-user-item">
+          <a class=navigation-user-link" href="#">Вход</a>
         </li>
-        <li class="site-navigation-item">
-          <a class="navigation-link" href="#">
+        <li class="navigation-user-item">
+          <a class="navigation-user-link" href="#">
             <span class="visually-hidden">Корзина</span>
           </a>
         </li>
@@ -47,19 +45,44 @@
   <main class="main-index">
     <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
     <section class="promo">
-      <h2>Нежный пломбир с клубничным джемом</h2>
-      <p class="discounts-title">Натуральное мороженое из свежих сливок
-        и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-      <a class="button-link button-order" href="#">Заказать</a>
-      <img src="#" alt="Клубничное мороженое собственного приготовления">
-      <img src="#" alt="Сливочное мороженое со вкусом банана собственного приготовления">
-      <img src="#" alt="Карамельный пломбир с маршмеллоу собственного приготовления">
-      <button class="slider-button button-next" type="button">
-        <span class="visually-hidden">Следующее фото</span>
-      </button>
-      <button class="slider-button button-prev" type="button">
-        <span class="visually-hidden">Предыдущее фото</span>
-      </button>
+      <ul class="slider-list">
+        <li class="slider-item">
+          <h2>Нежный пломбир с клубничным джемом</h2>
+          <p class="discounts-title">Натуральное мороженое из свежих сливок
+            и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+          <a class="button-link button-order" href="#">Заказать</a>
+          <img src="#" alt="Клубничное мороженое собственного приготовления">
+          <img src="#" alt="Сливочное мороженое со вкусом банана собственного приготовления">
+          <img src="#" alt="Карамельный пломбир с маршмеллоу собственного приготовления">
+        </li>
+        <li class="slider-item">
+          <h2>Сливочное мороженое со вкусом банана</h2>
+          <p class="discounts-title">Сливочное мороженое с ярким банановым вкусом подарит вам
+            свежесть и наслаждение даже в самый жаркий летний день.</p>
+          <a class="button-link button-order" href="#">Заказать</a>
+          <img src="#" alt="Сливочное мороженое со вкусом банана собственного приготовления">
+          <img src="#" alt="Карамельный пломбир с маршмеллоу собственного приготовления">
+          <img src="#" alt="Клубничное мороженое собственного приготовления">
+        </li>
+        <li class="slider-item">
+          <h2>Карамельный пломбир
+            с маршмеллоу</h2>
+          <p class="discounts-title">Необычный сладкий десерт с карамельным топпингом и кусочками зефира
+            завоюет сердца сладкоежек всех возрастов.</p>
+          <a class="button-link button-order" href="#">Заказать</a>
+          <img src="#" alt="Карамельный пломбир с маршмеллоу собственного приготовления">
+          <img src="#" alt="Клубничное мороженое собственного приготовления">
+          <img src="#" alt="Сливочное мороженое со вкусом банана собственного приготовления">
+        </li>
+      </ul>
+      <div class="container-button-slider">
+        <button class="slider-button button-next" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
+        <button class="slider-button button-prev" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+      </div>
       <ol class="slider-pagination">
         <li class="slider-pagination-item">
           <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -122,9 +145,9 @@
             <p>Сливочное мороженое с малиновым джемом</p>
             <b class="catalog-popular-flavors-prices">310 ₽/кг</b>
           </a>
-          <button class="button-basket" type="button">
+          <a class="icon-basket" href="#">
             <span class="visually-hidden">В корзину</span>
-          </button>
+          </a>
         </li>
         <li class="catalog-populars-flavors-item">
           <a href="catalog.html">
@@ -133,9 +156,9 @@
             <p>Фисташковый пломбир с кусочками шоколада</p>
             <b class="catalog-popular-flavors-prices">340 ₽/кг</b>
           </a>
-          <button class="button-basket" type="button">
+          <a class="icon-basket" href="#">
             <span class="visually-hidden">В корзину</span>
-          </button>
+          </a>
         </li>
         <li class="catalog-populars-flavors-item">
           <a href="catalog.html">
@@ -144,9 +167,9 @@
             <p>Крем-брюле с черничным джемом</p>
             <b class="catalog-popular-flavors-prices">330 ₽/кг</b>
           </a>
-          <button class="button-basket" type="button">
+          <a class="icon-basket" href="#">
             <span class="visually-hidden">В корзину</span>
-          </button>
+          </a>
         </li>
         <li class="catalog-populars-flavors-item">
           <a href="catalog.html">
@@ -155,9 +178,9 @@
             <p>Ванильный пломбир со сладкой посыпкой</p>
             <b class="catalog-popular-flavors-prices">320 ₽/кг</b>
           </a>
-          <button class="button-basket" type="button">
+          <a class="icon-basket" href="#">
             <span class="visually-hidden">В корзину</span>
-          </button>
+          </a>
         </li>
       </ul>
     </section>
@@ -186,7 +209,7 @@
     <section class="news">
       <h2 class="visually-hidden">Новости и подписка</h2>
       <article class="blog">
-        <h3>10 способов сервировки фруктовых щербетов к столу</h3>
+        <a class="article-title" href="#">10 способов сервировки фруктовых щербетов к столу</a>
         <p>Новое в нашем блоге</p>
       </article>
       <section class="news-subscribe">
@@ -253,7 +276,7 @@
       </li>
     </ul>
     <ul class="footer-navigation-list">
-      <li class="footer-navigation-item footer-navigation-item-current">
+      <li class="footer-navigation-item footer-navigation-item-favorite">
         <a href="#">Для поставщиков</a>
       </li>
       <li class="footer-navigation-item">

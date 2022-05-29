@@ -243,15 +243,19 @@ label {
 }
 
 /* footer */
-.footer-navigation-item {
+.footer-navigation-link{
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
 }
-.footer-navigation-item-favorite {
+.footer-navigation-link-current {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
 }
 .copyright {
   font-weight: 400;
@@ -260,4 +264,85 @@ label {
 }
 .copyright > a {
   color: #2D3440;
+}
+
+/* страница каталога */
+
+.navigation-link-current {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FCFCFC;
+  background: #FF4A78;
+  border-radius: 30px;
+}
+
+/* main */
+
+.breadcrumbs-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+.breadcrumbs-active {
+  border-bottom: 1px solid #2D3440;
+}
+.catalog-header-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+.catalog-filter-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+#catalog-filter-sorting {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+  border: none;
+}
+.control {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.product-card-link {
+  color: #2D3440;
+  text-decoration: none;
+}
+.product-card-subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+.product-card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+.product-card-prices {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.pagination-show-more {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
 }

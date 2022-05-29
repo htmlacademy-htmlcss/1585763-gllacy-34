@@ -58,3 +58,69 @@ body {
   text-decoration: none;
   text-align: center;
 }
+
+/* main */
+
+.slider-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+.slider-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.button-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #2D3440;
+}
+.discounts-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+.discounts-item {
+  background: #FF7799;
+  border-radius: 16px;
+}
+.discounts-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.discounts-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.catalog-popular-flavors-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+.catalog-populars-flavors-item > a {
+  text-decoration: none;
+  color: #2D3440;
+  text-align: center;
+}
+.catalog-popular-flavors-subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.catalog-popular-flavors-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+}
+.catalog-popular-flavors-prices {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}

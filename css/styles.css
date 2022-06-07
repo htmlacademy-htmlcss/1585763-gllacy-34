@@ -879,29 +879,85 @@ label[for="delivery-form-date"] {
   color: #FCFCFC;
   background: #FF4A78;
   border-radius: 30px;
+  padding: 8px 16px;
 }
 
 /* main */
 
+.catalog-header {
+  display: flex;
+  flex-direction: column;
+}
+.breadcrumbs {
+  display: flex;
+  min-height: 20px;
+  width: 143px;
+  justify-content: space-between;
+  order: 1;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumbs:nth-child(2) {
+  background-image: url(../images/chevrons-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .breadcrumbs-link {
+  display: inline-block;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
   color: #2D3440;
+  min-height: 20px;
 }
 .breadcrumbs-active {
   border-bottom: 1px solid #2D3440;
+}
+.filters-container {
+  display: grid;
+  grid-template-columns: 196px 196px 1fr;
+  grid-template-rows: 64px;
+  gap: 16px 24px;
+  min-width: 823px;
+  margin-bottom: 16px;
+}
+.catalog-filter .catalog-filters-group:nth-child(4) {
+  grid-column: 1;
+  grid-row: 1;
+}
+.button {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: flex-end;
+  justify-self: start;
+  padding: 6px 40px;
+  min-height: 36px;
+  max-width: 185px;
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  border-radius: 20px;
 }
 .catalog-header-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  order: 2;
+  margin: 16px 0 40px 0;
 }
 .catalog-filter-title {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  padding: 0 0 8px 16px;
+}
+.catalog-filters-group {
+  padding: 0;
+  border: none;
 }
 #catalog-filter-sorting {
   font-weight: 400;
@@ -909,7 +965,27 @@ label[for="delivery-form-date"] {
   line-height: 20px;
   background: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
+  padding: 8px 0 8px 16px;
   border: none;
+}
+.catalog-filter-fat {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+  padding: 8px 0 8px 16px;
+  max-width: 400px;
+  border: none;
+}
+.control {
+  padding: 8px 8px 8px;
+}
+.control:first-child {
+  padding-left: 24px;
+}
+.control:last-child {
+  padding-right: 24px;
 }
 .catalog-filter {
   margin-bottom: 45px;
@@ -918,6 +994,26 @@ label[for="delivery-form-date"] {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+.filters-container-fillers {
+  display: grid;
+  grid-template-columns: 1fr 185px;
+  grid-template-rows: 64px;
+  gap: 16px 24px;
+  max-width: 809px;
+}
+.filters-container-fillers .catalog-filters-group {
+  min-width: 660px;
+}
+.catalog-fillers {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+  padding: 8px 0 8px 16px;
+  /*min-width: 604px;*/
+  border: none;
 }
 .button {
   font-weight: 700;

@@ -358,14 +358,6 @@ li {
 }
 
 /* секция catalog-popular-flavors */
-.catalog-popular-flavors {
-  margin: 0 0 100px 0;
-}
-.catalog-popular-flavors-list {
-  display: flex;
-  padding: 0;
-  max-height: 331px;
-}
 .catalog-popular-flavors-title {
   font-weight: 900;
   font-size: 32px;
@@ -375,59 +367,77 @@ li {
   max-width: 527px;
   min-height: 92px;
 }
+.catalog-popular-flavors-list {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  grid-template-rows: repeat(auto-fill, minmax(332px, 1fr));
+  gap: 30px;
+  padding: 0;
+  margin: 0 0 80px 0;
+ }
+/*.container-substrate {
+  display: block;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  !*align-content: end;*!
+}*/
 .catalog-populars-flavors-item {
-  min-width: 270px;
+  /*padding: 0 40px;*/
+  display: flex;
+  flex-direction: column;
+  /*justify-content: flex-end;*/
+/*  background-color: #FCFCFC;
+  background-position: 100px 100px;
+  border-radius: 8px;*/
 }
 .container-substrate {
   position: relative;
   z-index: -1;
-  background-color: #FCFCFC;
-  background-size: 270px 281px;
-  min-height: 270px;
-  transform: translateY(-260px);
+  top: -280px;
+  width: 270px;
+  height: 281px;
+  background: #FCFCFC;
   border-radius: 8px;
-}
-.catalog-populars-flavors-item:not(:last-child) {
-  margin-right: 30px;
-}
-.catalog-pic {
-  display: block;
-  order: 1;
-  text-align: center;
-  margin: 0 auto;
-  filter: drop-shadow(0px 4px 12px rgba(45, 52, 64, 0.1));
-  background-size: auto 168px;
+  /*padding: 0 40px;*/
+  box-sizing: border-box;
+  /*justify-self: flex-end;*/
+  /*align-self: flex-end;*/
+  /*justify-content: flex-end;*/
 }
 .catalog-populars-flavors-item-card {
+  display: inline-block;
+  text-align: center;
+  /*max-width: 190px;
+  min-height: 24px;*/
   text-decoration: none;
   color: #2D3440;
-  text-align: center;
-}
-.catalog-popular-flavors-subtitle {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  margin: 16px 0 8px 0;
-  order: 2;
+  /*display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 270px;
+  min-height: 287px;
+  background-color: #fff;
+  align-content: end;*/
 }
 .catalog-container {
   display: flex;
-  flex-direction: column;
+  
+}
+.catalog-popular-flavors-subtitle {
+  text-align: center;
+  max-width: 270px;
+  order: 2;
+}
+.catalog-pic {
+  order: 1;
 }
 .catalog-popular-flavors-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
   color: #565C66;
   order: 3;
-  max-width: 190px;
-  margin: 0 auto 16px;
 }
 .catalog-popular-flavors-prices {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  padding: 0 0 0 40px;
+  order: 4;
 }
 .catalog-icon-basket {
   display: inline-block;
@@ -438,7 +448,7 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50px;
-  transform: translate(73px, 5px);
+  /*transform: translate(73px, 5px);*/
 }
 
 /* секция advantages */
@@ -565,7 +575,6 @@ li {
   background: url(../images/background/subscription-bg.jpg) no-repeat;
   border-radius: 16px;
   width: 570px;
-/*  padding: 32px 32px 34px 32px;*/
 }
 .news-subscribe-container {
   background-color: #FCFCFC;

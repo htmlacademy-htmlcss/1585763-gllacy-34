@@ -1144,11 +1144,10 @@ input::placeholder {
   padding: 0;
 }
 .breadcrumbs-item {
-/*  margin: 0 20px 0 0;*/
   padding: 0 20px 0 0;
 }
 .breadcrumbs-item:not(:first-child) {
-  padding: 0 20px 0 8px/*15px*/;
+  padding: 0 20px 0 8px;
 }
 .breadcrumbs-item:not(:last-child) {
   background-image: url(../images/chevrons-right.svg);
@@ -1369,21 +1368,36 @@ input::placeholder {
   margin: 0 16px 0 0;
 }
 .catalog-fillers .control-mark-fillers {
-  width: 15px;
-  height: 15px;
-  border: 2px solid #2D3440;
-  border-radius: 2px;
-  box-sizing: border-box;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/form_icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0 8px 0 0;
   padding: 0 8px;
 }
 .control-input[type="checkbox"]:checked + .control-mark-fillers::before {
   position: absolute;
-  top: 14px;
-  left: 29px;
-  border: 2px solid blue;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
   content: "";
-  background-color: #2D3440;
+  background-image: url(../images/Union.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.control-input[type="checkbox"]:checked + .control-mark-fillers::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-image: url(../images/Union.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .catalog-filter {
   margin-bottom: 90px;

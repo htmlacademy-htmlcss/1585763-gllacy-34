@@ -1143,10 +1143,17 @@ input::placeholder {
   margin: 0;
   padding: 0;
 }
-.breadcrumbs:nth-child(2) {
+.breadcrumbs-item {
+/*  margin: 0 20px 0 0;*/
+  padding: 0 20px 0 0;
+}
+.breadcrumbs-item:not(:first-child) {
+  padding: 0 20px 0 8px/*15px*/;
+}
+.breadcrumbs-item:not(:last-child) {
   background-image: url(../images/chevrons-right.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
 }
 .breadcrumbs-link {
   display: inline-block;
@@ -1453,33 +1460,28 @@ input::placeholder {
 }
 .pagination-item:not(:first-child):not(:last-child) .pagination-link:hover {
   background-color: rgba(252, 252, 252, 0.5);
-  border-radius: 50px;
 }
 .pagination-item:not(:first-child):not(:last-child) .pagination-link:active {
   background: rgba(252, 252, 252, 0.5);
-  border: 1px solid #FCFCFC;
-  border-radius: 50px;
+  border-color: #FCFCFC;
 }
 .pagination-item:not(:first-child):not(:last-child) .pagination-link:focus {
   background: rgba(252, 252, 252, 0.3);
-  border: 1px solid #2D3440;
-  border-radius: 50px;
+  border-color: #2D3440;
 }
 .pagination-item:not(:first-child):not(:last-child) .pagination-link:current {
   background: #FCFCFC;
-  border-radius: 50px;
 }
-.pagination-item:not(:first-child):not(:last-child) .pagination-link {
-  display: block;
+.pagination-item/*:not(:first-child):not(:last-child)*/ .pagination-link {
   text-align: center;
   width: 26px;
-  height: 26px;
+  height: 24px;
   padding: 0;
   margin: 0;
 }
 .pagination-current {
   background: #FCFCFC;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 .pagination-item:first-child {
   display: inline-block;
@@ -1498,13 +1500,17 @@ input::placeholder {
   color: #2D3440;
   padding: 2px 7px;
   text-decoration: none;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
 }
 .pagination-prev {
   background-image: url(../images/pagination-union.svg);
   background-repeat: no-repeat;
   background-position: center;
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 .pagination-disabled {
   filter: opacity(0.3);

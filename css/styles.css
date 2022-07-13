@@ -66,7 +66,8 @@ body {
 .discounts-item,
 .catalog-populars-flavors-item,
 .footer-navigation-item,
-.breadcrumbs-item {
+.breadcrumbs-item,
+.popover-item{
   list-style-type: none;
 }
 
@@ -129,23 +130,63 @@ body {
 .navigation-user .navigation-user-link {
   min-width: 32px;
 }
-/*.navigation-item {
+.navigation-item {
   position: relative;
 }
 .popover {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.popover-content {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 39px;
+  right: 1px;
   z-index: 1;
+  min-width: 288px;
+  min-height: 156px;
+  text-align: center;
   box-sizing: border-box;
-  width: 300px;
-  padding: 40px;
   color: #2D3440;
+  padding: 40px 0;
   background-color: #FCFCFC;
-  min-height: 186px;
   box-shadow: 0 18px 40px rgba(79, 70, 60, 0.16);
 }
-.popover-close-button {
+/*.popover-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(345px, 345px));
+  grid-template-rows: repeat(auto-fit, minmax(46px, 46px));
+  padding: 0;
+  margin: 0;
+}
+.popover-item {
+  display: grid;
+  grid-template-columns: repeat(2, 143px);
+  grid-template-rows: repeat(2, 23px);
+  column-gap: 83px;
+}
+.popover-images {
+
+  display: block;
+  width: 46px;
+  height: 46px;
+}
+.popover-text {
+  grid-column: 1;
+  grid-row: 2;
+  margin: 0;
+}
+.prices {
+  margin: 0;
+}
+.popover-close {
+  display: none;
+}
+.popover-title {
+   margin: 0 0 32px 0;
+ }*/
+/*.popover-close-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -1014,7 +1055,7 @@ body {
 }
 .tooltip-text {
   padding: 8px 10px;
-  width: 160px;
+  width: 180px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -1024,16 +1065,21 @@ body {
   box-shadow: 0 2px 12px rgb(173 152 143 / 18%);
   border-radius: 1px;
   position: absolute;
-  left: 115%;
+  left: 135%;
   top: -15px;
   z-index: 1;
   display: none;
 }
 .tooltip-text::before {
-  content: ''/*url(../images/tooltip-arrow.svg)*/;
+  content: '';
   position: absolute;
-  left: -9%;
-  z-index: 3;
+  width: 14px;
+  height: 7px;
+  left: -10px;
+  top: 17px;
+  background: #FCFCFC;
+  border: 1px solid #FCFCFC;
+  transform: matrix(0, -1, -1, 0, 0, 0);
 }
 
 /* секция contacts */

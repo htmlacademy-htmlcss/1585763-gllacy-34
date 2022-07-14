@@ -6,13 +6,14 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <title>Страница каталога магазина мороженого Глейси</title>
 </head>
 <body>
 <header class="main-header">
   <nav class="main-nav">
     <a class="logo" href="index.html">
-      <img src="images/logotip.svg" width="137" height="56" alt="Логотип магазина мороженого Глейси">
+      <img class="logo-image" src="images/logotip.svg" width="137" height="56" alt="Логотип магазина мороженого Глейси">
     </a>
     <ul class="site-navigation-list">
       <li class="site-navigation-item">
@@ -55,6 +56,12 @@
           <span class="visually-hidden navigation-user-link-basket">Корзина</span>
           2 товара
         </a>
+        <!--Для открытия поповера нужно убрать класс popover-close-->
+        <div class="popover popover-cart popover-close">
+          <div class="popover-content">
+            <p class="popover-title">Ваша корзина пока пуста</p>
+          </div>
+        </div>
       </li>
     </ul>
   </nav>
@@ -88,7 +95,7 @@
             <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
             <div class="range">
               <div class="range-scale">
-                <div class="range-bar" style="left: 24px; width: 56px">
+                <div class="range-bar" style="left: 33px; width: 70px; top: -1px;">
                   <button class="range-toggle toggle-min">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
@@ -203,7 +210,7 @@
             <div class="catalog-container">
               <h3 class="catalog-popular-flavors-subtitle">Черника</h3>
               <img class="catalog-pic" src="images/catalog/blueberry-ice-cream.png" width="192" height="184" alt="Черничное мороженое">
-              <p class="catalog-popular-flavors-text">Крем-брюле с черничным джемом</p>
+              <p class="catalog-popular-flavors-text">Крем-брюле<br> с черничным джемом</p>
             </div>
           </a>
           <div class="container-prices">
@@ -222,7 +229,7 @@
             <div class="catalog-container">
               <h3 class="catalog-popular-flavors-subtitle">Бабл-гам</h3>
               <img class="catalog-pic" src="images/catalog/bubblegum-ice-cream.png" width="192" height="184" alt="Бабл-гам мороженое">
-              <p class="catalog-popular-flavors-text">Ванильный пломбир со сладкой посыпкой</p>
+              <p class="catalog-popular-flavors-text">Ванильный пломбир<br> со сладкой посыпкой</p>
             </div>
           </a>
           <div class="container-prices">
@@ -260,7 +267,7 @@
             <div class="catalog-container">
               <h3 class="catalog-popular-flavors-subtitle">Банан</h3>
               <img class="catalog-pic" src="images/catalog/banana-ice-cream.png" width="192" height="184" alt="Банановое мороженое">
-              <p class="catalog-popular-flavors-text">Сливочный пломбир
+              <p class="catalog-popular-flavors-text">Сливочный пломбир<br>
                 с банановым вкусом</p>
             </div>
           </a>
@@ -299,7 +306,7 @@
             <div class="catalog-container">
               <h3 class="catalog-popular-flavors-subtitle">Клубничка</h3>
               <img class="catalog-pic" src="images/catalog/strawberry-ice-cream.png" width="192" height="184" alt="Клубничное мороженое">
-              <p class="catalog-popular-flavors-text">Сливочный пломбир
+              <p class="catalog-popular-flavors-text">Сливочный пломбир<br>
                 с клубничным вкусом</p>
             </div>
           </a>
@@ -338,7 +345,7 @@
             <div class="catalog-container">
               <h3 class="catalog-popular-flavors-subtitle">Ментол</h3>
               <img class="catalog-pic" src="images/catalog/menthol-ice-cream.png" width="192" height="184" alt="Ментоловое мороженое">
-              <p class="catalog-popular-flavors-text">Сливочный пломбир
+              <p class="catalog-popular-flavors-text">Сливочный пломбир<br>
                 с ментоловым сиропом</p>
             </div>
           </a>
@@ -377,7 +384,7 @@
             <div class="catalog-container">
               <h3 class="catalog-popular-flavors-subtitle">Крем-брюле</h3>
               <img class="catalog-pic" src="images/catalog/creme-brulee-ice-cream.png" width="192" height="184" alt="Крем-брюле мороженое">
-              <p class="catalog-popular-flavors-text">Классическое крем-брюле</p>
+              <p class="catalog-popular-flavors-text">Классическое<br> крем-брюле</p>
             </div>
           </a>
           <div class="container-prices">
@@ -426,6 +433,7 @@
   </div>
 </main>
 <footer class="main-footer">
+  <span class="separator"></span>
   <ul class="social-links-list">
     <li class="social-links-item">
       <a class="social-link" href="https://t.me/htmlacademy">
